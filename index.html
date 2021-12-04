@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="icon" href="Benito.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ffc179805b.js" crossorigin="anonymous"></script>
+    <title>Benito portfolio</title>
+</head>
+<body onload="f()">
+    <header> 
+        <a href="Anglais.html" id="lang">EN</a>
+        <form name="fo">
+            <input type="text" readonly name="message" >
+        </form>
+    </header>
+    <div class="portfolio">
+                    <div class="img">
+                            <img src="Benito.jpg" alt="">
+
+                            <div class="about">
+                                        <p>Benito Junior  <span>Aristhene</span></p>
+                                            <div class="info">
+                                            Salut! Je suis un  <span id="developpeur">developpeur Web </span> <br/>
+                                            Maitrisant les languages suivants : <span>HTML5</span>,<span>css3</span>,
+                                            <span>Php(MYSQL)</span> <br/>
+                                            Je suis un passionne des ordinateurs
+                                        </div>
+                                <div class="link">
+                                    <a href=""> <p>PORTFOLIO</p> </a>
+                                    Joignez moi sur <br/>
+                        
+                                   
+                        
+                                        <div class="icon">
+                                           <a href="https://www.facebook.com/BenitoJunior15/"> <i class="fab fa-facebook"></i></a>
+                                            <i class="fab fa-instagram"></i>
+                                            <i class="fab fa-youtube"></i>
+                                        </div>
+                
+                                        
+                
+
+                                </div>
+
+                            </div>
+
+                    </div>
+                    
+    </div>
+    <script language="javascript">
+        str1="Salut a vous tous !";
+        i=0;
+        dir="D";
+        function f(){
+            setTimeout("f()",390);
+            document.fo.message.value=str1.substring(0,i);
+            if(dir=="D"){
+                if(i<str1.length)
+                i++;
+                else
+                dir="G";
+            }
+            if(dir=="G"){
+                if(i>0)
+                i--;
+                else
+                dir="D";
+            }
+        }
+    </script>
+</body>
+</html>
